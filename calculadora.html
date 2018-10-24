@@ -1,61 +1,60 @@
 <html>
-    <head>
-        <title>Calculadora</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="calculadoracss.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/javascript" src="Calculadora.js"></script>
-        
-    </head>
 
-    <body>
+<head>
+    <title>Calculadora</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="calculadoracss.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-       <div class="calculadora">
 
-            <div class="pantalla">
-                    <input type="textarea" id="pantalla" value="" />
-            </div>
-           
+</head>
 
-        <div class="botones">
-                
-            <button type="button" class="borrartotal" id="arriba" onclick="escribir('borrartotal','0')" value="borrartotal">CE</button>
-            <button type="button" class="borrarultimo" id="arriba" onclick="escribir('borrarultimo','0')" value="borrarultimo">C</button>           
-            <button type="button" class="cogerultimo" id="arriba" onclick="escribir('cogerultimo','0')" value="cogerultimo">Ans</button> 
-            <button type="button" class="operador" onclick="escribir('operador','/')" value="/">/</button>
+<body>
 
-            <button type="button" class="numeros" onclick="escribir('numeros','7')" value="7">7</button>
-            <button type="button" class="numeros" onclick="escribir('numeros','8')" value="8">8</button>
-            <button type="button" class="numeros" onclick="escribir('numeros','9')" value="9">9</button>
-            <button type="button" class="operador" onclick="escribir('operador','+')" value="+">+</button>
-        
+    <div class="calculadora">
 
-            <button type="button" class="numeros" onclick="escribir('numeros','4')" value="4">4</button>
-            <button type="button" class="numeros" onclick="escribir('numeros','5')" value="5">5</button>
-            <button type="button" class="numeros" onclick="escribir('numeros','6')" value="6">6</button>
-            <button type="button" class="operador" onclick="escribir('operador','-')" value="-">-</button>
-
-        
-            <button type="button" onclick="escribir('numeros','1')" class="numeros" value="1">1</button>
-            <button type="button" onclick="escribir('numeros','2')" class="numeros" value="2">2</button>
-            <button type="button" onclick="escribir('numeros','3')" class="numeros" value="3">3</button>
-            <button type="button" onclick="escribir('operador','*')" class="operador" value="*">*</button>
-
-            <button type="button" class="masmenos" onclick="escribir('masmenos','-')"  value="±">±</button>
-            <button type="button" class="numeros" onclick="escribir('numeros','0')" value="0">0</button>
-            <button type="button" class="decimal" onclick="escribir('decimal','.')" value=".">.</button>
-            <button type="button" class="resultado"  onclick="escribir('resultado','.')" value="=">=</button>
-                     
-           
-            
-        
-            </div>
+        <div class="pantalla">
+            <input type="textarea" id="pantalla" value="" disabled />
         </div>
 
-    
-        
-    </body>
+
+        <div class="botones">
+
+            <button data-tipo="borrartotal" type="button" class="boton" id="arriba" value="0">CE</button>
+            <button data-tipo="borrarultimo" type="button" class="boton" id="arriba" value="0">C</button>
+            <button data-tipo="cogerultimo" type="button" class="boton" id="arriba" value="0">Ans</button>
+            <button data-tipo="operador" type="button" class="boton" value="/">/</button>
+
+            <button data-tipo="numero" type="button" class="boton" value="7">7</button>
+            <button data-tipo="numero" type="button" class="boton" value="8">8</button>
+            <button data-tipo="numero" type="button" class="boton" value="9">9</button>
+            <button data-tipo="operador" type="button" class="boton" value="+">+</button>
+
+
+            <button data-tipo="numero" type="button" class="boton" value="4">4</button>
+            <button data-tipo="numero" type="button" class="boton" value="5">5</button>
+            <button data-tipo="numero" type="button" class="boton" value="6">6</button>
+            <button data-tipo="operador" type="button" class="boton" value="-">-</button>
+
+
+            <button data-tipo="numero" type="button" class="boton" value="1">1</button>
+            <button data-tipo="numero" type="button" class="boton" value="2">2</button>
+            <button data-tipo="numero" type="button" class="boton" value="3">3</button>
+            <button data-tipo="operador" type="button" class="boton" value="*">*</button>
+
+            <button data-tipo="masmenos" type="button" class="boton" value="-">±</button>
+            <button data-tipo="numero" type="button" class="boton" value="0">0</button>
+            <button data-tipo="decimal" type="button" class="boton" value=".">.</button>
+            <button data-tipo="resultado" type="button" class="boton" value="=">=</button>
+
+
+
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="Calculadora.js"></script>
+
+</body>
 
 </html>
-
-
