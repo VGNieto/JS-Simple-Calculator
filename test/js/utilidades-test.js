@@ -73,7 +73,7 @@ describe('Pruebas números pequeños', () => {
 
 describe('Pruebas extrañas(inalcanzables de forma gráfica)', () => {
   it('Prueba 1', () => {
-    evaluar("2++3*2").should.equal(0);  });
+    evaluar("2++3**2").should.equal(0);  });
   it('Prueba 2', () => {
     evaluar("3+hola*2").should.equal(0);  });
   it('Prueba 3', () => {
